@@ -1,3 +1,15 @@
+/*************** Variabler *********************/
+
+* {
+  /* Globale */
+  --black: #060607;
+  --darkergrey: #1b1b1b;
+  --darkgrey: #4e4c4c;
+  --lightgrey: #79777a;
+  --lightergrey: #e7e7e7;
+  --white: #ffffff;
+}
+
 /*************** Reset *********************/
 * {
   margin: 0;
@@ -13,14 +25,16 @@ img {
   padding-bottom: 0;
 }
 
+/*************** Generel CSS *********************/
+
 body {
-  background-color: #060607;
-  overflow-y: scroll;
+  background-color: var(--black);
+  overflow-y: scroll; /* SCROLL BAR */
 }
 
 main {
   padding: 10px 100px 10px 100px;
-  background-color: #1d1d20; /* SCROLL BAR */
+  background-color: var(--darkergrey);
 }
 
 h1 {
@@ -34,14 +48,14 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   padding: 30px 10px 10px 10px;
-  color: white;
+  color: var(--white);
 }
 
 p {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 300;
-  color: #e7e7e7;
+  color: var(--lightergrey);
 }
 
 p.small {
@@ -50,8 +64,8 @@ p.small {
   padding: 15px 100px 15px 5px;
   margin: 0;
   border-radius: 5px;
-  color: white;
-  background-color: #363636;
+  color: var(--white);
+  background-color: var(--darkgrey);
 }
 
 p.medium {
@@ -60,7 +74,7 @@ p.medium {
 }
 
 p.small:hover {
-  background-color: rgb(81, 80, 82);
+  background-color: var(--lightgrey);
 }
 
 nav {
@@ -69,8 +83,8 @@ nav {
 }
 
 button {
-  background-color: #363636;
-  color: #e7e7e7;
+  background-color: var(--darkgrey);
+  color: var(--lightgrey);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-decoration: none;
@@ -82,20 +96,22 @@ button {
 }
 
 button.navigation {
-  color: white;
+  color: var(--white);
   font-weight: 300;
   border-radius: 30px;
   padding: 10px 20px;
 }
 
 button.navigation:hover {
-  background-color: white;
-  color: #363636;
+  background-color: var(--white);
+  color: var(--darkgrey);
 }
 
+/*************** Tekstfelt i header *********************/
+
 input {
-  background-color: #363636;
-  color: #363636;
+  background-color: var(--darkgrey);
+  color: var(--darkgrey);
   font-size: 15px;
   padding: 15px 200px;
   border-radius: 20px;
@@ -105,13 +121,13 @@ input {
 .textarea {
   text-align: left;
   padding-left: 15px;
-  color: white;
+  color: var(--white);
   font-size: 15px;
   font-weight: 400;
 }
 
 .textarea::placeholder {
-  color: #d4d4d4;
+  color: var(--lightgrey);
 }
 
 .home_icon {
@@ -119,7 +135,7 @@ input {
   max-height: 30px;
 }
 
-/** SCROLL BAR **/
+/** SCROLL BAR  chat-gpt**/
 
 /* Tilpasning af scrollbar */
 ::-webkit-scrollbar {
@@ -128,18 +144,19 @@ input {
 
 /* Baggrunden af scrollbaren */
 ::-webkit-scrollbar-track {
-  background: #121212; /* Mørk baggrund som Spotify */
+  background: var(--darkgrey); /* Mørk baggrund som Spotify */
   border-radius: 10px;
 }
 
 /* Selve scrollelementet (den bevægelige del) */
 ::-webkit-scrollbar-thumb {
-  background: #363636; /* Spotify grøn */
+  background: var(--lightgrey);
+  opacity: 50%; /* Spotify grøn */
   border-radius: 10px;
   min-height: 30px; /* Minimum længde */
 }
 
 /* Når brugeren holder musen over scrollbaren */
 ::-webkit-scrollbar-thumb:hover {
-  background: white; /* Lidt lysere grøn */
+  background: var(--white); /* Lidt lysere grøn */
 }
