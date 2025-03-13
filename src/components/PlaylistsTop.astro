@@ -1,0 +1,32 @@
+---
+const { paragraph } = Astro.props;
+---
+
+<article class="flex">
+  <img
+    src="/src/assets/album.jpeg"
+    alt="Placeholder_album"
+    class="playlists_top"
+  />
+  <p class="small">{paragraph}</p>
+</article>
+
+<style>
+  .flex {
+    display: flex;
+    padding: 3px 7px;
+  }
+
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: flex-end;
+  }
+
+  .playlists_top {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+  }
+</style>

@@ -1,0 +1,29 @@
+---
+const home_imageUrl = "/src/assets/home_icon.png";
+const explore_imageUrl = "/src/assets/explore_icon.png";
+---
+
+<nav>
+  <a href="index.astro">
+    <button style={`background-image: url(${home_imageUrl})`}></button>
+  </a>
+  <input class="textarea" type="text" placeholder="Hvad vil du afspille?" />
+  <a href="explore.astro">
+    <button style={`background-image: url(${explore_imageUrl})`}></button>
+  </a>
+</nav>
+
+<style>
+  button {
+    background-color: 363636;
+    color: white;
+    padding: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 30px;
+  }
+</style>

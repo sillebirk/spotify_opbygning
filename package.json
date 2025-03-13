@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "my-astro-project",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,5 +10,9 @@
   },
   "dependencies": {
     "astro": "^5.4.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

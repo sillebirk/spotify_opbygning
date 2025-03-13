@@ -1,0 +1,145 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body {
+  background-color: #060607;
+  overflow-y: scroll;
+}
+
+main {
+  padding: 10px 100px 10px 100px;
+  background-color: #1d1d20; /* SCROLL BAR */
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  color: white;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 30px 10px 10px 10px;
+  color: white;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #e7e7e7;
+}
+
+p.small {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 15px 100px 15px 5px;
+  margin: 0;
+  border-radius: 5px;
+  color: white;
+  background-color: #363636;
+}
+
+p.medium {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+p.small:hover {
+  background-color: rgb(81, 80, 82);
+}
+
+nav {
+  padding: 10px 30px;
+  text-align: center;
+}
+
+button {
+  background-color: #363636;
+  color: #e7e7e7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+button.navigation {
+  color: white;
+  font-weight: 300;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+button.navigation:hover {
+  background-color: white;
+  color: #363636;
+}
+
+input {
+  background-color: #363636;
+  color: #363636;
+  font-size: 15px;
+  padding: 15px 200px;
+  border-radius: 20px;
+  border: none;
+}
+
+.textarea {
+  text-align: left;
+  padding-left: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.textarea::placeholder {
+  color: #d4d4d4;
+}
+
+.home_icon {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/** SCROLL BAR **/
+
+/* Tilpasning af scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Gør scrollbaren smal */
+}
+
+/* Baggrunden af scrollbaren */
+::-webkit-scrollbar-track {
+  background: #121212; /* Mørk baggrund som Spotify */
+  border-radius: 10px;
+}
+
+/* Selve scrollelementet (den bevægelige del) */
+::-webkit-scrollbar-thumb {
+  background: #363636; /* Spotify grøn */
+  border-radius: 10px;
+  min-height: 30px; /* Minimum længde */
+}
+
+/* Når brugeren holder musen over scrollbaren */
+::-webkit-scrollbar-thumb:hover {
+  background: white; /* Lidt lysere grøn */
+}

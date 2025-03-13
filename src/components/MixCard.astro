@@ -1,0 +1,36 @@
+---
+const { paragraph } = Astro.props;
+---
+
+<article class="dailymix_hover">
+  <img src="/src/assets/mix.jpeg" alt="DailyMix" class="dailymix" />
+  <p>{paragraph}</p>
+</article>
+
+<style>
+  .dailymix_hover {
+    background-color: none;
+  }
+
+  .dailymix_hover:hover {
+    background-color: #363636;
+    border-radius: 20px;
+  }
+
+  p {
+    padding: 0 10px;
+  }
+
+  .grid_1-1-1-1-1 {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px 10px;
+  }
+
+  .dailymix {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 25px;
+    padding: 0 10px;
+  }
+</style>

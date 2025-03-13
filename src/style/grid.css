@@ -1,0 +1,46 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.grid_1 {
+  display: flex;
+  grid-template-rows: 1fr;
+  padding: 10px 0;
+}
+
+.grid_1-1-1-1-1 {
+  display: flex;
+  grid-template-columns: repeat(5fr);
+  padding: 5px 10px;
+}
+
+.dailymix {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: flex-end;
+}
+
+.playlists_top {
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 5px;
+}
